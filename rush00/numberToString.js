@@ -10,9 +10,7 @@ for ( [ key,value] of Object.entries(_numbers)) {
     index++
     
 }
-
 console.log(lettres) ;
 }
 numberToString(numbers)
-//module.exports = numberToString ;
-
+module.exports = numberToString ;
