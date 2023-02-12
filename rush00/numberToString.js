@@ -1,16 +1,17 @@
-var numbers = {un:1,deux:2,trois:3,quatre:4,cinq:5,six:6,sept:7,huit:8,neuf:9,dix:10};
+var input =[1,2,3,4,5,6,7,8,9,10];
 function numberToString(_numbers){
 var index = 0;
-this.lettres = new Array(3);
-this.entiers = new Array(3);
-for ( [ key,value] of Object.entries(_numbers)) {
+var numbers = {un:1,deux:2,trois:3,quatre:4,cinq:5,six:6,sept:7,huit:8,neuf:9,dix:10};
+this.entiers = new Array();
+for ( [ key,value] of Object.entries(numbers)) {
 
-    lettres[index] = key
+    _numbers[index] = key
     entiers[index] = value;
     index++
-    
+    if(index == _numbers.length)
+    break;
 }
-console.log(lettres) ;
+console.log(_numbers) ;
 }
-numberToString(numbers)
+numberToString(input);
 module.exports = numberToString ;
